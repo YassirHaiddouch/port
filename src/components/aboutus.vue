@@ -36,17 +36,17 @@
     <div class=" my-8 grid px-5 grid-cols-1 gap-8  md:grid-cols-2 md:gap-12 lg:grid-cols-3">
          
                 <button class="btn gap-4 rounded-lg bg-orange-300 p-4 text-nav hover:bg-orange-400" onclick="my_modal_1.showModal()">Languages</button>
-              <dialog id="my_modal_1" class="modal pt-0">
-                <div class="modal-box bg-orange-100 pt-0">
+              <dialog id="my_modal_1" class="modal  pt-0 ">
+                <div class="modal-box bg-orange-100 px-0 pt-0">
                   
-                    <div class="sticky top-0  bg-orange-300">
+                    <div class="sticky top-0 p-2  w-full bg-orange-300 z-50">
                   <form method="dialog">
-                    <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2  hover:bg-orange-200 hover:scale-110">✕</button>
+                    <button class="btn btn-sm btn-circle btn-ghost absolute right-3 top-0.5  text-lg  hover:bg-orange-200 hover:scale-110">✕</button>
                   </form>
-                  <h3 class="font-bold text-lg">Languages</h3> 
+                  <h3 class="font-bold text-lg ml-3">Languages</h3> 
                     </div>
                     
-
+                   <div class="px-5">
                   <p class="py-4">Coding languages are specialized tools used to communicate instructions to computers, enabling them to perform various tasks and processes.</p>
                   <details class="group [&_summary::-webkit-details-marker]:hidden gap-4">
                   <summary
@@ -104,7 +104,7 @@
               <label class="swap swap-flip text-7xl">
                 <!-- this hidden checkbox controls the state -->
                 <input type="checkbox" />
-                <div class="swap-off flex justify-center items-center"><i class="fa-brands fa-html5 " style="color: #fb923c;"></i></div>
+                <div class="swap-off flex justify-center items-center"><img src="/logos/php.svg" alt="" srcset=""></div>
                 <div class="swap-on flex justify-center items-center text-3xl">HTML</div>
               </label>
               <label class="swap swap-flip text-7xl">
@@ -157,33 +157,49 @@
             </p>
           </details>    
                 </div>
-                
+                </div>
+                <form method="dialog" class="modal-backdrop">
+                <button>close</button>
+              </form>
               </dialog>
 
                
                 
               <button class="btn gap-4 rounded-lg bg-orange-300 p-4 text-nav hover:bg-orange-400" onclick="my_modal_2.showModal()">Frameworks</button>
               <dialog id="my_modal_2" class="modal">
-                <div class="modal-box bg-orange-100">
+                <div class="modal-box bg-orange-100 pt-0 w-full px-0">
+                  <div class="sticky top-0 p-2  w-full bg-orange-300 z-50">
                   <form method="dialog">
-                    <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2  hover:bg-orange-200 hover:scale-110">✕</button>
+                    <button class="btn btn-sm btn-circle btn-ghost absolute right-3 top-0.5  text-lg  hover:bg-orange-200 hover:scale-110">✕</button>
                   </form>
-                  <h3 class="font-bold text-lg">Frameworks</h3>
-                  <p class="py-4">A coding framework is a pre-established structure or set of tools that simplifies and standardizes software development, streamlining the process of building applications by providing reusable components, patterns, and guidelines.
-</p>
+                  <h3 class="font-bold text-lg ml-3">Framework</h3> 
+                    </div>
+                    <div class="px-4">
+                  <p class="py-4">A coding framework is a pre-established structure or set of tools that simplifies and standardizes software development, streamlining the process of building applications by providing reusable components, patterns, and guidelines.</p>
+                    </div>
                 </div>
+                <form method="dialog" class="modal-backdrop">
+                <button>close</button>
+              </form>
               </dialog>
 
 
               <button class="btn gap-4 rounded-lg bg-orange-300 p-4 text-nav hover:bg-orange-400" onclick="my_modal_3.showModal()">Skills</button>
               <dialog id="my_modal_3" class="modal">
-                <div class="modal-box bg-orange-100">
+                <div class="modal-box bg-orange-100 pt-0 w-full px-0">
+                  <div class="sticky top-0 p-2  w-full bg-orange-300 z-50">
                   <form method="dialog">
-                    <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 hover:bg-orange-200 hover:scale-110">✕</button>
+                    <button class="btn btn-sm btn-circle btn-ghost absolute right-3 top-0.5  text-lg  hover:bg-orange-200 hover:scale-110">✕</button>
                   </form>
-                  <h3 class="font-bold text-lg">Skills</h3>
+                  <h3 class="font-bold text-lg ml-3">Skill</h3> 
+                    </div>
+                    <div class="px-4">
                   <p class="py-4">My skill set includes proficiency in web development, data analysis, and work in teams...</p>
-                </div>
+               </div>
+               </div>
+               <form method="dialog" class="modal-backdrop">
+                <button>close</button>
+              </form>
               </dialog>
 
                 
